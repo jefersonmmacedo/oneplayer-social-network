@@ -37,15 +37,15 @@ export function FeedProfile() {
             {section === "FeedProfile" ?
            <>
             <PostComonent />
-            <PostItem text={texts[0].text} img={photo}/>
-            <PostItem text={texts[1].text} img={photo2}/>
-            <PostItem text={texts[2].text} img={photo3}/>
-            <PostItem text={texts[3].text} img={photo4}/>
-            <PostItem text={texts[4].text} img={photo5}/>
-            <PostItem text={texts[5].text} img={photo6}/>
-            <PostItem text={texts[6].text} img={photo7}/>
-            <PostItem text={texts[7].text} img={photo8}/>
-            <PostItem text={texts[8].text} img={photo9}/>
+            <PostItem text={texts[0].text} media={photo}/>
+            <PostItem text={texts[1].text} media={photo2}/>
+            <PostItem text={texts[2].text} media={photo3}/>
+            <PostItem text={texts[3].text} media={photo4}/>
+            <PostItem text={texts[4].text} media={photo5}/>
+            <PostItem text={texts[5].text} media={photo6}/>
+            <PostItem text={texts[6].text} media={photo7}/>
+            <PostItem text={texts[7].text} media={photo8}/>
+            <PostItem text={texts[8].text} media={photo9}/>
            </>
            : section === "Pessoas" ?
            ""
