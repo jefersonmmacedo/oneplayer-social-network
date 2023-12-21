@@ -1,0 +1,70 @@
+.FeedProfile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+}
+  
+
+.FeedProfile .buttonsFeedProfile {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.FeedProfile .buttonsFeedProfile button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Black);
+    color: var(--Gray);
+    object-fit: cover;
+}
+.FeedProfile .buttonsFeedProfile button:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.FeedProfile .buttonsFeedProfile button:last-child{
+    border-radius: 0px 10px  10px  0px;
+}
+.FeedProfile .buttonsFeedProfile button:hover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+.FeedProfile .buttonsFeedProfile .select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+
+
+@media (max-width: 850px) {
+    .FeedProfile {
+        width: 100%;
+    }
+}
+
+

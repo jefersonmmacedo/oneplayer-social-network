@@ -1,0 +1,102 @@
+.ToolsLeft {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+}
+
+.ToolsLeft .logo {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0 25px 0;
+}
+.ToolsLeft .logo img {
+    width: 65%;
+}
+.ToolsLeft .listToolsLeft {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.ToolsLeft .listToolsLeft a {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 3px 0;
+    text-decoration: none;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: var(--Black3);
+}
+
+.ToolsLeft .listToolsLeft a svg {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.ToolsLeft .listToolsLeft a:hover {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--Primary);
+    margin: 3px 0;
+    text-decoration: none;
+    color: var(--White);
+}
+.ToolsLeft .listToolsLeft .select {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--Black);
+    margin: 3px 0;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.ToolsLeft .links {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.ToolsLeft .links a {
+    text-decoration: none;
+    color: var(--Gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 11px;
+    margin: 4px;
+}
+.ToolsLeft .links p {
+    color: var(--Gray);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 16px;
+    background: var(--Primary);
+}
+
+
+@media (max-width: 650px) {
+    .ToolsLeft {
+        display: none;
+    }
+}

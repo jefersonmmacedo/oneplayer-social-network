@@ -1,0 +1,24 @@
+.Home {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Home .aside {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 1220px) {
+    .Home .aside {
+        width: 100%;
+    }
+}
+

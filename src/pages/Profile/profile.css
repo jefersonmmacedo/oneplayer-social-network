@@ -1,0 +1,337 @@
+.Profile {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Profile .aside {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.Profile .aside .asideProfile {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+    overflow: auto;
+}
+
+.Profile .aside .asideProfile::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .Profile .aside .asideProfile::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .Profile .aside .asideProfile::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+.Profile .aside .asideProfile hr {
+    width: 95%;
+    border-color: var(--Black2);
+}
+.Profile .aside .asideProfile .links {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--White);
+    margin: 10px 0;
+}
+
+.Profile .aside .asideProfile .links a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.Profile .aside .asideProfile .links a svg {
+    font-size: 24px;
+    margin-right: 5px;
+}
+.Profile .aside .asideProfile .links button {
+    background: var(--Black2);
+    border: none;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 24px;
+}
+.Profile .aside .asideProfile .infosProfile {
+    background: var(--Black);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 95%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 0 20px 0;
+}
+.Profile .aside .asideProfile .infosProfile .topProfile {
+    background: var(--Black);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Profile .aside .asideProfile .infosProfile .topProfile button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin: 10px 3px;
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile button svg {
+    font-size: 20px;
+}
+.Profile .aside .asideProfile .infosProfile .topProfile .user {
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .user .usernames {
+    color: var(--White);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .user .usernames h5 {
+    color: var(--Gray);
+}
+.Profile .aside .asideProfile .infosProfile .topProfile .user .usernames .verified {
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .user .usernames .verified h4 {
+    font-weight: 600;
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .user .usernames .verified svg {
+    margin-left: 5px;
+    color: var(--Primary);
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+.Profile .aside .asideProfile .infosProfile .bio {
+    width: 100%;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin:15px 0 ;
+}
+.Profile .aside .asideProfile .infosProfile .modeInfos {
+    width: 100%;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.Profile .aside .asideProfile .infosProfile .modeInfos h5 svg {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.Profile .aside .asideProfile .infosProfile .modeInfos h5 a {
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+
+
+.Profile .aside .asideProfile .infosProfile .connection {
+    width: 100%;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.Profile .aside .asideProfile .infosProfile .connection .follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.Profile .aside .asideProfile .infosProfile .connection .follow .numbers h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.Profile .aside .asideProfile .infosProfile .connection .follow .numbers h5 span {
+    margin-left: 5px;
+    color: var(--Gray);
+}
+
+.Profile .aside .asideProfile .infosProfile .modeInfos h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.Profile .aside .asideProfile .infosProfile .connection .follow .images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.Profile .aside .asideProfile .infosProfile .connection .follow .images img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -5px;
+    border: 2px solid var(--White);
+}
+
+
+.Profile .aside .asideProfile .buttonsProfile {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 20px 0;
+}
+.Profile .aside .asideProfile .buttonsProfile button{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Black);
+    color: var(--Gray);
+    object-fit: cover;
+    font-size: 14px;
+}
+.Profile .aside .asideProfile .buttonsProfile button:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.Profile .aside .asideProfile .buttonsProfile button:last-child{
+    border-radius: 0px 10px  10px  0px;
+}
+.Profile .aside .asideProfile .buttonsProfile button:hover{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+.Profile .aside .asideProfile .buttonsProfile .select{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+
+
+
+@media (max-width: 1220px) {
+    .Profile .aside {
+        width: 100%;
+    }
+    @media (max-width: 850px) {
+        .Profile .aside .asideProfile .buttonsProfile {
+            width: 95%;
+        }
+
+        .Profile .aside .asideProfile .buttonsProfile button{
+            font-size: 12px;
+        }
+
+    @media (max-width: 650px) {
+        .Profile .aside .asideProfile {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            background: var(--Black2);
+            border: none;
+            border-left: none;
+            overflow: auto;
+        }
+
+
+}
+}
+}
+

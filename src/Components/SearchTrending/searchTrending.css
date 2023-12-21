@@ -1,0 +1,76 @@
+.SearchTrending {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.SearchTrending::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .SearchTrending::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .SearchTrending::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+.SearchTrending .search {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--Black);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.SearchTrending .search svg {
+    color: var(--Primary);
+    font-size: 20px;
+}
+.SearchTrending .search input {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    background: var(--Black);
+
+}
+
+.SearchTrending .asideTrending {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    background: var(--Black);
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.SearchTrending .asideTrending h5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: var(--White);
+    font-weight: 600;
+    border-bottom: 1px solid var(--Gray);
+    padding: 5px;
+}
+
+@media (max-width: 900px) {
+    .SearchTrending {
+        display: none;
+    }
+}

@@ -1,0 +1,197 @@
+.CardProfile {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+    overflow: auto;
+}
+
+.CardProfile .buttonsCardProfile {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.CardProfile .buttonsCardProfile a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Black);
+    color: var(--Gray);
+    object-fit: cover;
+    text-decoration: none;
+    font-size: 14px;
+}
+.CardProfile .buttonsCardProfile a:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.CardProfile .buttonsCardProfile a:last-child{
+    border-radius: 0px 10px  10px  0px;
+}
+.CardProfile .buttonsCardProfile a:hover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+.CardProfile .buttonsCardProfile .select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+
+
+.CardProfile::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .CardProfile::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .CardProfile::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+  .CardProfile .blockProfile {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .CardProfile .blockProfile h4 {
+    color: var(--White);
+    font-weight: 600;
+    margin: 10px;
+  }
+
+  .CardProfile .blockProfile .listProfile {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: var(--Black);
+    padding:10px;
+    border-radius: 10px;
+  }
+  .CardProfile .blockProfile .listProfile .unicProfile {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+  .CardProfile .blockProfile .listProfile .unicProfile button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin: 3px;
+}
+  .CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 5px;
+      object-fit: cover;
+    }
+
+    /* .CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile svg{
+        margin: 7px 0;
+        color: var(--Primary);
+    } */
+    .CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile .usernameProfile {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 5px;
+    }
+
+
+.CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile .usernameProfile h5 {
+    margin: 0px 0px 0px 5px;
+    font-weight: 500;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile .usernameProfile svg{
+        margin-left: 3px;
+        color: var(--Primary);
+    }
+
+.CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile .usernameProfile h6 {
+    margin: 0px 6px 5px 6px; 
+    color: var(--Gray);
+}
+.CardProfile .blockProfile .listProfile .unicProfile .imageNameProfile .usernameProfile h6 span {
+    margin: 10px 0px;
+    color: var(--White);
+}
+
+
+
+@media (max-width: 900px) {
+    .CardProfile {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .CardProfile {
+        width:100%;
+        border: none;
+    }
+
+    .CardProfile .buttonsCardProfile {
+        width: 95%;
+    }
+}
+}

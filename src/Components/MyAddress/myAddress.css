@@ -1,0 +1,285 @@
+ 
+.MyAddress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1100px;
+    margin: 20px auto;
+}
+
+.MyAddress h3 {
+    font-weight: 700;
+    color: var(--Primary);
+}
+.MyAddress .MyAddressList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+.MyAddress .MyAddressList .userAddress {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+}
+
+.MyAddress .MyAddressList .userAddress h4 span {
+    font-weight: 700;
+}
+.MyAddress .MyAddressList .userAddress button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:70%;
+    color: var(--White);
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px;
+}
+.MyAddress button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:300px;
+    color: var(--White);
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.MyAddress button svg {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+
+.content-moda-Process-client {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;    
+    overflow:auto;
+    max-height: 600px;  
+}
+
+  .content-moda-Process-client::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+    .content-moda-Process-client::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+    border-radius: 20px;
+  }
+  
+    .content-moda-Process-client::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+.content-moda-Process-client .itensModal-Process-client {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 10px;
+
+}
+
+.content-moda-Process-client .itensModal-Process-client .form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.content-moda-Process-client .itensModal-Process-client .form .buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin: 0px;
+    margin: 5px 0;
+}
+.content-moda-Process-client .itensModal-Process-client .form .buttons button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 49%;
+    color: var(--White);
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px;
+}
+.content-moda-Process-client .itensModal-Process-client .form .buttons .btn2 {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 49%;
+    color: var(--Primary);
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px;
+}
+
+
+
+.content-moda-Process-client .itensModal-Process-client h3 {
+    margin: 10px;
+    color: var(--Primary);
+    font-weight: 600;
+}
+
+
+.content-moda-Process-client .itensModal-Process-client .form input {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:100%;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px 0;
+}
+.content-moda-Process-client .itensModal-Process-client .form .input2 {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:68%;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px 0;
+}
+.content-moda-Process-client .itensModal-Process-client .form .input3 {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:30%;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px 0;
+}
+.content-moda-Process-client .itensModal-Process-client .form .input4 {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:32%;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px 0;
+}
+.content-moda-Process-client .itensModal-Process-client .form select {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:100%;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 5px 0;
+}
+
+.content-moda-Process-client .itensModal-Process-client .form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    width:300px;
+    color: var(--White);
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    margin: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-moda-Process-client .itensModal-Process-client .form button svg {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 1120px) {
+    .MyAddress {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 10px;
+    }
+    @media (max-width: 650px) {
+        .MyAddress .MyAddressList {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+
+        .MyAddress .MyAddressList .userAddress {
+            width: 90%;
+        }
+
+        .content-moda-Process-client .itensModal-Process-client .form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row; 
+            flex-wrap: wrap;
+        }
+
+
+        .content-moda-Process-client .itensModal-Process-client .form input {
+            width: 48%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input2 {
+            width: 48%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input3 {
+            width: 48%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input4 {
+            width: 48%;
+        }
+
+        @media (max-width: 450px) {
+
+        .content-moda-Process-client .itensModal-Process-client .form input {
+            width: 100%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input2 {
+            width: 100%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input3 {
+            width: 100%;
+        }
+        .content-moda-Process-client .itensModal-Process-client .form .input4 {
+            width: 100%;
+        }
+        
+}
+}
+}

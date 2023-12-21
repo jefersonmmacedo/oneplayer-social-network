@@ -1,0 +1,98 @@
+.Feed {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+    overflow: auto;
+}
+
+.Feed::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .Feed::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .Feed::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+  
+
+.Feed .buttonsFeed {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.Feed .buttonsFeed a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Black);
+    color: var(--Gray);
+    object-fit: cover;
+    text-decoration: none;
+    font-size: 14px;
+}
+.Feed .buttonsFeed a:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.Feed .buttonsFeed a:last-child{
+    border-radius: 0px 10px  10px  0px;
+}
+.Feed .buttonsFeed a:hover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+.Feed .buttonsFeed .select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+
+@media (max-width: 900px) {
+    .Feed {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .Feed {
+        width:100%;
+        border: none;
+    }
+
+    .Feed .buttonsFeed {
+        width: 95%;
+    }
+}
+}
