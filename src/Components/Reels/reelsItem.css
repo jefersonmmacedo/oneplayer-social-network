@@ -1,0 +1,132 @@
+.Reelstem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+}
+.Reelstem .media {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px 5px 0px;
+    border-bottom: 1px solid var(--Paragraph);
+}
+
+.Reelstem .media  video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Reelstem  .media .userMedia {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    color: var(--White);
+}
+.Reelstem  .media .userMedia .infosUserMedia {
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.Reelstem  .media .userMedia .infosUserMedia .textUser {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1px 0 5px 0;
+}
+.Reelstem  .media .userMedia .infosUserMedia .userImageName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.Reelstem  .media .userMedia .infosUserMedia .userImageName img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.Reelstem  .media .userMedia .infosUserMedia .userImageName h5 {
+    font-weight: 600;
+    margin: 0 10px;
+}
+.Reelstem  .media .userMedia .infosUserMedia .userImageName button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black2);
+    color: var(--Primary);
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin: 10px 3px;
+    font-size: 12px;
+}
+
+.Reelstem  .media .userMedia .reactions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--White);
+    margin: 5px 0px 0px 0;
+}
+.Reelstem  .media .userMedia .reactions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--White);
+    background: var(--Black2);
+    border: none;
+    font-size: 12px;
+}
+
+.Reelstem  .media .userMedia .reactions button svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 900px) {
+    .Reelstem {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .Reelstem {
+        width:100%;
+        border: none;
+    }
+    @media (max-width: 450px) {
+        .Reelstem .media {
+            width: 90%;
+        }
+        
+        .Reelstem  .media .userMedia {
+            width: 100%;
+        }
+}
+}
+}

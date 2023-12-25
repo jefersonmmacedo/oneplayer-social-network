@@ -3,7 +3,10 @@ import { HiCheckBadge } from "react-icons/hi2";
 import { SlOptionsVertical } from "react-icons/sl";
 import photo from "../../assets/images/default.png";
 import { AiOutlineLike, AiOutlineDislike  } from "react-icons/ai";
+import { VscSend } from "react-icons/vsc";
+import { BsSend } from "react-icons/bs";
 import imageDefault from "../../assets/images/imageDefault.png";
+import { CiSaveDown2 } from "react-icons/ci";
 import { CiChat1 } from "react-icons/ci";
 import { TbArrowsExchange } from "react-icons/tb";
 import ReactPlayer from 'react-player/vimeo'
@@ -30,6 +33,7 @@ export function PostItem({text, media}) {
                 <div className="info">
                     <h6>12 Dez</h6>
                     <SlOptionsVertical />
+                    <CiSaveDown2 size={24} />
                 </div>
             </div>
             <div className="text">
@@ -39,12 +43,10 @@ export function PostItem({text, media}) {
                 {media?.includes(".png") || media?.includes(".jpg") ?
                     <img src={media} alt="" />
                     :
-                <video src={media} autoPlay controls></video>
+                <video src={media} controls></video>
             }
 
             </div>
-
-
 
             <div className="reactions">
                 <button>
@@ -60,9 +62,8 @@ export function PostItem({text, media}) {
                     <TbArrowsExchange /> 517
                 </button>
                 <button>
-                    <CiChat1 /> Enviar
-                </button>
-               
+                    <VscSend /> Enviar
+                </button>               
             </div>
 
             </div>

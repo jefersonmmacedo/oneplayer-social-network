@@ -1,0 +1,97 @@
+.Explorer {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Explorer .aside {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.Explorer .aside .asideExplorer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--Black2);
+    border: none;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-left: 1px solid var(--Paragraph);
+    margin-bottom: 20px;
+}
+
+.Explorer .aside .asideExplorer::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .Explorer .aside .asideExplorer::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .Explorer .aside .asideExplorer::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+  .Explorer .aside .asideExplorer .blockExplorer {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .Explorer .aside .asideExplorer .blockExplorer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .Explorer .aside .asideExplorer .blockExplorer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+
+
+@media (max-width: 1220px) {
+    .Explorer .aside {
+        width: 100%;
+    }
+
+    @media (max-width: 900px) {
+        .Explorer .aside .asideExplorer {
+            width:70%;
+        }
+
+        .Explorer .aside .asideExplorer .blockExplorer {
+            width:150px;
+            height:150px;
+            margin: 5px;
+          }
+        
+
+    @media (max-width: 650px) {
+        .Explorer .aside .asideExplorer {
+            width: 95%;
+            border: none;
+        }
+
+}
+}
+}
+

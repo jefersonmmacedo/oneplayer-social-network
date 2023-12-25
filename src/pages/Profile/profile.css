@@ -58,6 +58,7 @@
     margin: 10px 0;
 }
 
+
 .Profile .aside .asideProfile .links a {
     text-decoration: none;
     color: var(--White);
@@ -72,7 +73,16 @@
     font-size: 24px;
     margin-right: 5px;
 }
-.Profile .aside .asideProfile .links button {
+
+.Profile .aside .asideProfile .links .buttonsLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.Profile .aside .asideProfile .links .buttonsLinks button {
     background: var(--Black2);
     border: none;
     color: var(--White);
@@ -80,7 +90,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 .Profile .aside .asideProfile .infosProfile {
     background: var(--Black);
@@ -103,6 +114,25 @@
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+}
+.Profile .aside .asideProfile .infosProfile .topProfile .buttonsInfosProfile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Profile .aside .asideProfile .infosProfile .topProfile .buttonsInfosProfile button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin: 10px 3px;
 }
 .Profile .aside .asideProfile .infosProfile .topProfile button {
     display: flex;
@@ -307,6 +337,14 @@
     .Profile .aside {
         width: 100%;
     }
+
+    @media (max-width: 900px) {
+        .Profile .aside .asideProfile {
+            width:70%;
+        }
+
+
+
     @media (max-width: 850px) {
         .Profile .aside .asideProfile .buttonsProfile {
             width: 95%;
@@ -331,6 +369,7 @@
         }
 
 
+}
 }
 }
 }

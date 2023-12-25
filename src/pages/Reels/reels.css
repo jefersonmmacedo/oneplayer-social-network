@@ -1,0 +1,67 @@
+.Reels {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Reels .aside {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.Reels .aside .asideReels {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+
+    overflow: auto;
+}
+
+.Reels .aside .asideReels::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .Reels .aside .asideReels::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .Reels .aside .asideReels::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+
+@media (max-width: 1220px) {
+    .Reels .aside {
+        width: 100%;
+    }
+
+    @media (max-width: 900px) {
+        .Reels .aside .asideReels {
+            width:70%;
+        }
+
+    @media (max-width: 650px) {
+        .Reels .aside .asideReels {
+            width: 95%;
+        }
+
+
+}
+}
+}
+

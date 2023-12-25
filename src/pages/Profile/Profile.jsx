@@ -15,6 +15,8 @@ import { useState } from "react";
 import { Feed } from "../../Components/Feed/Feed";
 import { FeedProfile } from "../../Components/FeedProfile/FeedProfile";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
+import { SlOptionsVertical } from "react-icons/sl";
+import { CiSaveDown2 } from "react-icons/ci";
 
 export function Profile() {
     const [section, setSection] = useState("Postagens");
@@ -32,7 +34,10 @@ export function Profile() {
                 <div className="asideProfile">
                     <div className="links">
                         <a href="/"><IoArrowBack /> Jeferson Macedo</a>
-                        <button><IoShareSocialSharp  /></button>
+                        <div className="buttonsLinks">
+                            <button><IoShareSocialSharp  /></button>
+                            <button><SlOptionsVertical /></button>
+                        </div>
                     </div>
 
                     <div className="infosProfile">
@@ -48,9 +53,18 @@ export function Profile() {
                             </div>
                         </div>
 
-                       <button>+ Seguir</button>
-                       <button><IoChatbubbleEllipsesOutline /></button>
-                       </div>
+                                {/* <button>+ Seguir</button> */}
+
+                                <button><IoCalendarOutline /></button>
+                                <button><CiSaveDown2 size={22} /></button>
+                                <button><IoChatbubbleEllipsesOutline /></button>
+
+                            {/* <div className="buttonsInfosProfile">
+                                <button><IoCalendarOutline /></button>
+                                <button><CiSaveDown2 size={22} /></button>
+                                <button><IoChatbubbleEllipsesOutline /></button>
+                           </div> */}
+                        </div>
 
                        <div className="bio">
                             <p>O pedaço padrão de Lorem Ipsum usado desde então é reproduzido. Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica</p>

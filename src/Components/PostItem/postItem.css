@@ -78,19 +78,20 @@
 .PostItem .post .user .info {
     width: 20%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     flex-direction: row;
     color: var(--White);
 }
 
 .PostItem .post .user .info svg{
-    margin: 7px 3px 3px 3px;
+    margin: 3px 5px;
     color: var(--Gray);
 }
 .PostItem .post .user .info h6 {
-    margin: 7px 3px 3px 3px;
+    margin: 3px 3px 3px 3px;
     color: var(--Gray);
+    font-weight: 600;
 }
 
 .PostItem .post .text {

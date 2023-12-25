@@ -17,6 +17,8 @@ import { RecoverPasswordNew } from '../pages/RecoverPasswordNew/RecoverPassword'
 import { NotFound } from '../pages/NotFound/NotFound';
 import { Profile } from '../pages/Profile/Profile';
 import { Profiles } from '../pages/Profiles/Profiles';
+import { Reels } from '../pages/Reels/Reels';
+import { Explorer } from '../pages/Explorer/Explorer';
 
 function Router () {
         const Local = localStorage.getItem("lenseyewear");
@@ -32,6 +34,8 @@ function Router () {
             <Route path="/" element={<Home />}/>
             <Route path="/feed" element={<Home />}/>
             <Route path="/perfis" element={<Profiles />}/>
+            <Route path="/reels" element={<Reels />}/>
+            <Route path="/explorar" element={<Explorer />}/>
             <Route path="/entrar" element={<SignIn />}/>
             <Route path="/cadastrar" element={<SignUp />}/>
             <Route path="/perfil" element={<Profile />}/>
