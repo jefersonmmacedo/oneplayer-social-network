@@ -1,4 +1,5 @@
 import { Feed } from "../../Components/Feed/Feed";
+import { FooterMobile } from "../../Components/FooterMobile/FooterMobile";
 import Navbar from "../../Components/NavBarTop/Navbar";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 
@@ -17,7 +18,7 @@ export function Home() {
                 <Feed />
                 <SearchTrending />
             </div>
-            {/* <Footer/> */}
+            <FooterMobile />
         </div>
     )
 }

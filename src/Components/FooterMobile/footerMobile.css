@@ -1,0 +1,64 @@
+.FooterMobile {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    z-index: 97;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    color: var(--Description);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    height: 45px;
+    padding: 0 10px;
+}
+
+
+.FooterMobile a {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 3px 0;
+    text-decoration: none;
+    color: var(--PrimaryHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: transparent;
+}
+
+.FooterMobile a svg {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.FooterMobile button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 3px 0;
+    border: none;
+    color: var(--PrimaryHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: transparent;
+}
+
+.FooterMobile button svg {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.FooterMobile a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+    .FooterMobile {
+        display:flex;
+    }
+}
