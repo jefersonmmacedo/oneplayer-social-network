@@ -6,7 +6,7 @@ const StyledBurger = styled.div`
   width: 1.8rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
+
   right: 8px;
   z-index: 99;
   display: none;
@@ -20,7 +20,7 @@ const StyledBurger = styled.div`
   div {
     width: 1.8rem;
     height: 0.30rem;
-    background-color: ${({ open }) => open ? '#7c4ed8' : '#7c4ed8'};
+    background-color: ${({ open }) => open ? '#F75900' : '#F75900'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -38,6 +38,10 @@ const StyledBurger = styled.div`
     &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
+  }
+
+  @media (max-width: 650px) {
+    right: -2px;
   }
 `;
 

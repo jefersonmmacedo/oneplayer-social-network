@@ -51,6 +51,9 @@
     }
 
     @media (max-width: 900px) {
+        .Reels {
+            padding-top: 60px;
+        }
         .Reels .aside .asideReels {
             width:70%;
         }

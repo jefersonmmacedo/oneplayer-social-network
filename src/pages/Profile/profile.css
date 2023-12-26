@@ -339,6 +339,9 @@
     }
 
     @media (max-width: 900px) {
+        .Profile {
+            padding-top: 60px;
+        }
         .Profile .aside .asideProfile {
             width:70%;
         }

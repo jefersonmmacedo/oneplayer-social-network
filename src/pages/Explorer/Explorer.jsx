@@ -28,6 +28,7 @@ import videoPost6 from "../../assets/videos/post6.mp4";
 import { useState } from "react";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 import { Reelstem } from "../../Components/Reels/Reelstem";
+import Navbar from "../../Components/NavBarTop/Navbar";
 
 export function Explorer() {
     const [section, setSection] = useState("Postagens");
@@ -39,6 +40,8 @@ export function Explorer() {
 
     return (
         <div className="Explorer">
+            <Navbar />
+            
             <div className="aside">
                 <ToolsLeft menu={"Explorar"}/>
                 

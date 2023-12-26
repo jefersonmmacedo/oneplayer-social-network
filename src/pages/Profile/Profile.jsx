@@ -17,6 +17,7 @@ import { FeedProfile } from "../../Components/FeedProfile/FeedProfile";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 import { SlOptionsVertical } from "react-icons/sl";
 import { CiSaveDown2 } from "react-icons/ci";
+import Navbar from "../../Components/NavBarTop/Navbar";
 
 export function Profile() {
     const [section, setSection] = useState("Postagens");
@@ -28,6 +29,7 @@ export function Profile() {
 
     return (
         <div className="Profile">
+            <Navbar />
             <div className="aside">
                 <ToolsLeft menu={"Perfil"}/>
                 
@@ -53,11 +55,11 @@ export function Profile() {
                             </div>
                         </div>
 
-                                {/* <button>+ Seguir</button> */}
+                                <button>+ Seguir</button>
 
-                                <button><IoCalendarOutline /></button>
-                                <button><CiSaveDown2 size={22} /></button>
-                                <button><IoChatbubbleEllipsesOutline /></button>
+                                <button className="btnProfile"><IoCalendarOutline /></button>
+                                <button className="btnProfile"><CiSaveDown2 size={22} /></button>
+                                <button className="btnProfile"><IoChatbubbleEllipsesOutline /></button>
 
                             {/* <div className="buttonsInfosProfile">
                                 <button><IoCalendarOutline /></button>

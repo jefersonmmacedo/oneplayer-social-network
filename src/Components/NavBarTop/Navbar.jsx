@@ -1,23 +1,31 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
-import LogoImg from '../../assets/images/logo-color.png'
+import LogoImg from '../../assets/images/logo2.png'
 import { AuthContext } from '../../contexts/Auth';
+import { IoCalendarOutline, IoChatbubbleEllipsesOutline, IoHeartOutline } from 'react-icons/io5';
+import { BsPlusSquare } from "react-icons/bs";
+import { GoPlusCircle } from "react-icons/go";
+import { CiSaveDown2 } from 'react-icons/ci';
 
 
 const Nav = styled.nav`
   width: 100%;
-  display: flex;
-  align-items: flex-start;
+  display: none;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   position: fixed;
   top: 0;
   z-index: 97;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
   font-size: 14px;
   color: var(--Description);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  padding: 0px 60px 0px 0px ;
+
+  
 .logotipo {
     display: none;
   }
@@ -25,8 +33,9 @@ const Nav = styled.nav`
 
 
 @media (max-width: 900px) {
-  height: 60px;
-  padding: 0 20px;
+  display: flex;
+  height: 45px;
+  padding: 0 70px 0 30px;
   .account {
     margin: 20px 0;
     width: 100%;
@@ -35,19 +44,58 @@ const Nav = styled.nav`
 
 .logotipo {
   display: block;
-    padding: 10px 0;
+    padding-top: 5px;
   }
 .logotipo a img {
-    height: 40px;
+    height: 30px;
   }
+
+  .buttonsNarbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.buttonsNarbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 15px;
+    font-size: 22px;
+    background: transparent;
+    color: var(--Primary);
+    border: none;
+    border-radius: 6px;
+    margin: 0 20px;
+}
 
 
 
   @media (max-width: 650px) {
 
+    display: flex;
+    height: 45px;
+    padding: 0 60px 0 20px;
+
 
   @media (max-width: 600px) {
-
+    .buttonsNarbar button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 10px 10px;
+      font-size: 22px;
+      background: transparent;
+      color: var(--Primary);
+      border: none;
+      border-radius: 6px;
+      margin: 0px;
+  }
+  
 
   }
   }
@@ -67,6 +115,16 @@ const Navbar = () => {
       <img src={LogoImg} alt="Lens Eyewear" />
       </a>
       </div>
+
+
+      <div className="buttonsNarbar">
+                <button ><GoPlusCircle  /></button> 
+                <button ><IoCalendarOutline /></button>
+                <button ><IoHeartOutline /></button>
+                <button ><IoChatbubbleEllipsesOutline /></button>
+            </div>
+
+
       <Burger />
     </Nav>
   )

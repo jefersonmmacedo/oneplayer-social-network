@@ -13,6 +13,7 @@ import video10 from "../../assets/videos/reels10.mp4";
 import { useState } from "react";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 import { Reelstem } from "../../Components/Reels/Reelstem";
+import Navbar from "../../Components/NavBarTop/Navbar";
 
 export function Reels() {
     const [section, setSection] = useState("Postagens");
@@ -24,6 +25,7 @@ export function Reels() {
 
     return (
         <div className="Reels">
+            <Navbar />
             <div className="aside">
                 <ToolsLeft menu={"Reels"}/>
                 

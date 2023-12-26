@@ -20,5 +20,10 @@
     .Home .aside {
         width: 100%;
     }
+@media (max-width: 900px) {
+    .Home {
+        padding-top: 60px;
+    }
+}
 }
 
