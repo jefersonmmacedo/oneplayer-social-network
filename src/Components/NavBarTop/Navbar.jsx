@@ -9,6 +9,7 @@ import { GoPlusCircle } from "react-icons/go";
 import { CiSaveDown2 } from 'react-icons/ci';
 import { HiFire, HiOutlineFire } from 'react-icons/hi';
 import { AiOutlineFire } from "react-icons/ai";
+import { MdOutlineStadium } from 'react-icons/md';
 
 const Nav = styled.nav`
   width: 100%;
@@ -119,8 +120,8 @@ const Navbar = () => {
 
 
       <div className="buttonsNarbar">
-                <button ><AiOutlineFire  /></button> 
                 <button ><IoCalendarOutline /></button>
+                <button ><MdOutlineStadium /></button> 
                 <button ><IoHeartOutline /></button>
                 <button ><IoChatbubbleEllipsesOutline /></button>
             </div>

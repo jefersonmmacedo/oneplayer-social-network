@@ -45,6 +45,30 @@
     border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
   }
 
+  .Explorer .aside .asideExplorer .searchExplorer {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--Black);
+    color: var(--White);
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    padding: 0 10px;
+  }
+
+  .Explorer .aside .asideExplorer .searchExplorer input {
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  .Explorer .aside .asideExplorer .searchExplorer svg {
+    font-size: 20px;
+  }
+
   .Explorer .aside .asideExplorer .blockExplorer {
     aspect-ratio : 1 / 1;
     width: 31%;
@@ -100,6 +124,12 @@
           object-fit: cover;
           border-radius: 3px;
         }
+
+        .Explorer .aside .asideExplorer .searchExplorer {
+          width: 98%;
+          margin: 10px 0;
+        }
+      
       
 
 }

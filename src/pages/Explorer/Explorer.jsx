@@ -29,6 +29,7 @@ import { useState } from "react";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 import { Reelstem } from "../../Components/Reels/Reelstem";
 import Navbar from "../../Components/NavBarTop/Navbar";
+import { IoSearchCircleOutline, IoSearchSharp } from "react-icons/io5";
 
 export function Explorer() {
     const [section, setSection] = useState("Postagens");
@@ -46,6 +47,65 @@ export function Explorer() {
                 <ToolsLeft menu={"Explorar"}/>
                 
                 <div className="asideExplorer">
+
+                    <div className="searchExplorer">
+                        <IoSearchSharp />
+                        <input type="text" placeholder="Faça sua busca"/>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video2} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo2} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost2} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video3} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo3} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost3} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video4} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo4} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost4} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video5} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo5} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost5} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <video src={video6} controls></video>
+                    </div>
+                    <div className="blockExplorer">
+                         <img src={photo6} alt="" />
+                    </div>
+                    <div className="blockExplorer">
+                        <video src={videoPost6} controls></video>
+                    </div>
                     <div className="blockExplorer">
                          <video src={video} controls></video>
                     </div>

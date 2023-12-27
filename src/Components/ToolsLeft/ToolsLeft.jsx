@@ -1,12 +1,13 @@
 import "./toolsLeft.css";
 import LogoImg from '../../assets/images/logo2.png'
-import { IoHome, IoCompass, IoHeart, IoChatbubbleEllipses   } from "react-icons/io5";
+import { IoHome, IoCompass, IoHeart, IoChatbubbleEllipses, IoLogoFacebook   } from "react-icons/io5";
 import { HiStatusOnline, HiOutlineFire, HiUserGroup, HiOutlineVideoCamera   } from "react-icons/hi";
 import { HiMiniUser } from "react-icons/hi2";
 import { MdStadium } from "react-icons/md";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { BsPlayBtn, BsPlayBtnFill } from "react-icons/bs";
 import { AiFillFire } from "react-icons/ai";
+import { RiFacebookFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXFill, RiYoutubeFill } from "react-icons/ri";
 
 export function ToolsLeft({menu}) {
     const date = new Date().getFullYear();
@@ -42,6 +43,14 @@ export function ToolsLeft({menu}) {
                 <a href="#"> Mais</a>
                 <a href="#" >.</a>
                 <a href="#"> One Player © {date}</a>
+            </div>
+
+            <div className="icons">
+                <a href="/"><RiFacebookFill size={18}/></a>
+                <a href="/"><RiTwitterXFill size={16}/></a>
+                <a href="/"><RiInstagramLine size={18}/></a>
+                <a href="/"><RiLinkedinBoxFill size={18}/></a>
+                <a href="/"><RiYoutubeFill size={20}/></a>
             </div>
         
         </div>
