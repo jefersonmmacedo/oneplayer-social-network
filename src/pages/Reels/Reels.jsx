@@ -25,7 +25,7 @@ export function Reels() {
 
     return (
         <div className="Reels">
-            <Navbar />
+           
             <div className="aside">
                 <ToolsLeft menu={"Reels"}/>
                 

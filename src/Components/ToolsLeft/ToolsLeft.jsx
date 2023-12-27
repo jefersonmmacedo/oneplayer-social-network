@@ -1,10 +1,12 @@
 import "./toolsLeft.css";
 import LogoImg from '../../assets/images/logo2.png'
 import { IoHome, IoCompass, IoHeart, IoChatbubbleEllipses   } from "react-icons/io5";
-import { HiStatusOnline, HiFire, HiUserGroup, HiOutlineVideoCamera   } from "react-icons/hi";
+import { HiStatusOnline, HiOutlineFire, HiUserGroup, HiOutlineVideoCamera   } from "react-icons/hi";
 import { HiMiniUser } from "react-icons/hi2";
 import { MdStadium } from "react-icons/md";
-
+import { GoHome, GoHomeFill } from "react-icons/go";
+import { BsPlayBtn, BsPlayBtnFill } from "react-icons/bs";
+import { AiFillFire } from "react-icons/ai";
 
 export function ToolsLeft({menu}) {
     const date = new Date().getFullYear();
@@ -17,15 +19,15 @@ export function ToolsLeft({menu}) {
             </div>
 
             <div className="listToolsLeft">
-                <a href="/" className={menu === "Feed" ? "select": ""}><IoHome/> Feed</a>
+                <a href="/" className={menu === "Feed" ? "select": ""}><GoHomeFill/> Feed</a>
                 <a href="/perfil" className={menu === "Perfil" ? "select": ""}><HiMiniUser/> Perfil</a>
                 <a href="/explorar" className={menu === "Explorar" ? "select": ""}><IoCompass /> Explorar</a>
                 {/* <a href="/notificacoes" className={menu === "Notificações" ? "select": ""}><IoHeart /> Notificações</a> */}
                {/*  <a href="/mensagens" className={menu === "Mensagens" ? "select": ""}><IoChatbubbleEllipses  /> Mensagens</a> */}
-                <a href="/trending" className={menu === "Trending" ? "select": ""}><HiFire /> Trending</a>
+                <a href="/trending" className={menu === "Trending" ? "select": ""}><AiFillFire /> Trending</a>
                 <a href="/moments" className={menu === "Moments" ? "select": ""}><MdStadium /> Moments</a>
                 <a href="/grupos" className={menu === "Grupos" ? "select": ""}><HiUserGroup /> Grupos</a>
-                <a href="/reels" className={menu === "Reels" ? "select": ""}><HiOutlineVideoCamera /> Reels</a>
+                <a href="/reels" className={menu === "Reels" ? "select": ""}><BsPlayBtnFill /> Reels</a>
                 <a href="/lives" className={menu === "Lives" ? "select": ""}><HiStatusOnline /> Lives</a>
             </div>
 

@@ -11,14 +11,14 @@ export function Home() {
 
     return (
         <div className="Home">
-            <Navbar />
+           
 
             <div className="aside">
                 <ToolsLeft menu={"Feed"}/>
                 <Feed />
                 <SearchTrending />
             </div>
-            <FooterMobile />
+           
         </div>
     )
 }

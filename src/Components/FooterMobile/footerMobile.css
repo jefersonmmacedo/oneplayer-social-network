@@ -30,7 +30,7 @@
 }
 
 .FooterMobile a svg {
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 24px;
 }
 .FooterMobile button {
@@ -47,14 +47,16 @@
 }
 
 .FooterMobile button svg {
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 24px;
+
 }
 
 .FooterMobile a img {
     width: 30px;
     height: 30px;
     border-radius: 50px;
+    margin: 3px 0;
 }
 
 @media (max-width: 600px) {
