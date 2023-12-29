@@ -49,9 +49,9 @@ export function Feed() {
     return (
         <div className="Feed">
             <div className="buttonsFeed">
-            <a href="/" className={"select"}>Feed</a>
+                <a href="/" className={"select"}>Feed</a>
                 <a href="/perfis" className={""}>Pessoas</a>
-                <a href="/" className={""}>Trending</a>
+                <a href="/trending" className={""}>Trending</a>
             </div>
 
           

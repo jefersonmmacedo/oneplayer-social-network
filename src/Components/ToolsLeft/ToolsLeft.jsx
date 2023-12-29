@@ -16,7 +16,9 @@ export function ToolsLeft({menu}) {
         <div className="ToolsLeft">
            
             <div className="logo">
-                <img src={LogoImg} alt="" />
+                <a href="/">
+                    <img src={LogoImg} alt="" />
+                </a>
             </div>
 
             <div className="listToolsLeft">
@@ -42,7 +44,7 @@ export function ToolsLeft({menu}) {
                 <a href="#" >.</a>
                 <a href="#"> Mais</a>
                 <a href="#" >.</a>
-                <a href="#"> One Player © {date}</a>
+                <p> One Player © {date}</p>
             </div>
 
             <div className="icons">

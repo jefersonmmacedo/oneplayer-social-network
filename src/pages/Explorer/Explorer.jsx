@@ -53,112 +53,112 @@ export function Explorer() {
                         <input type="text" placeholder="Faça sua busca"/>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video} controls></video>
+                         <video src={video} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost} controls></video>
+                        <video src={videoPost} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video2} controls></video>
+                         <video src={video2} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo2} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost2} controls></video>
+                        <video src={videoPost2} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video3} controls></video>
+                         <video src={video3} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo3} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost3} controls></video>
+                        <video src={videoPost3} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video4} controls></video>
+                         <video src={video4} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo4} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost4} controls></video>
+                        <video src={videoPost4} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video5} controls></video>
+                         <video src={video5} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo5} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost5} controls></video>
+                        <video src={videoPost5} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video6} controls></video>
+                         <video src={video6} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo6} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost6} controls></video>
+                        <video src={videoPost6} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video} controls></video>
+                         <video src={video} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost} controls></video>
+                        <video src={videoPost} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video2} controls></video>
+                         <video src={video2} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo2} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost2} controls></video>
+                        <video src={videoPost2} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video3} controls></video>
+                         <video src={video3} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo3} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost3} controls></video>
+                        <video src={videoPost3} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video4} controls></video>
+                         <video src={video4} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo4} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost4} controls></video>
+                        <video src={videoPost4} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video5} controls></video>
+                         <video src={video5} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo5} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost5} controls></video>
+                        <video src={videoPost5} ></video>
                     </div>
                     <div className="blockExplorer">
-                         <video src={video6} controls></video>
+                         <video src={video6} ></video>
                     </div>
                     <div className="blockExplorer">
                          <img src={photo6} alt="" />
                     </div>
                     <div className="blockExplorer">
-                        <video src={videoPost6} controls></video>
+                        <video src={videoPost6} ></video>
                     </div>
                 </div>
 

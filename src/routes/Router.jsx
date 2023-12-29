@@ -19,6 +19,7 @@ import { Profile } from '../pages/Profile/Profile';
 import { Profiles } from '../pages/Profiles/Profiles';
 import { Reels } from '../pages/Reels/Reels';
 import { Explorer } from '../pages/Explorer/Explorer';
+import { Trendings } from '../pages/Trendings/Trendings';
 
 function Router () {
         const Local = localStorage.getItem("lenseyewear");
@@ -36,6 +37,7 @@ function Router () {
             <Route path="/perfis" element={<Profiles />}/>
             <Route path="/reels" element={<Reels />}/>
             <Route path="/explorar" element={<Explorer />}/>
+            <Route path="/trending" element={<Trendings />}/>
             <Route path="/entrar" element={<SignIn />}/>
             <Route path="/cadastrar" element={<SignUp />}/>
             <Route path="/perfil" element={<Profile />}/>

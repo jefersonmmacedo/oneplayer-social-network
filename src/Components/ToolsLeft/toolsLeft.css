@@ -16,6 +16,11 @@
     flex-direction: column;
     margin: 10px 0 25px 0;
 }
+.ToolsLeft .logo a {
+    margin: 0;
+    padding: 0;
+}
+
 .ToolsLeft .logo img {
     width: 65%;
 }
@@ -84,14 +89,18 @@
     font-size: 11px;
     margin: 4px;
 }
+.ToolsLeft .links a:hover {
+    color: var(--Primary);
+}
 .ToolsLeft .links p {
+    text-decoration: none;
     color: var(--Gray);
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    font-size: 16px;
-    background: var(--Primary);
+    font-size: 11px;
+    margin: 4px;
 }
 
 .ToolsLeft .icons {

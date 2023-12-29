@@ -20,5 +20,11 @@
     .Profiles .aside {
         width: 100%;
     }
+
+    @media (max-width: 900px) {
+        .Profiles {
+            padding-top: 60px;
+        }
+    }
 }
 

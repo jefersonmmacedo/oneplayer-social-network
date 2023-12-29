@@ -19,7 +19,7 @@ export function CardProfile() {
             <div className="buttonsCardProfile">
                 <a href="/" className={""}>Feed</a>
                 <a href="/perfis" className={"select"}>Pessoas</a>
-                <a href="/" className={""}>Trending</a>
+                <a href="/trending" className={""}>Trending</a>
             </div>
 
             <div className="blockProfile">

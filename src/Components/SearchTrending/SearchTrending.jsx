@@ -26,6 +26,13 @@ export function SearchTrending() {
 
             <div className="asideTrending">
                 <h5>Próximos eventos</h5>
+
+                <div className="events">
+                    <div className="eventUnic">
+                        <h6>Nenhum evento adicionado</h6>
+                        <a href="#">Adicionar novo evento</a>
+                    </div>
+                </div>
             </div>
             <div className="asideTrending">
                 <h5>O que está acontecendo</h5>

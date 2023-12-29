@@ -141,6 +141,46 @@
 }
 
 
+.SearchTrending .events {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    color: var(--White);
+}
+.SearchTrending .events .eventUnic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    color: var(--White);
+}
+
+ .SearchTrending .events .eventUnic h6 {
+    margin:5px;
+    font-weight: 500;
+    padding: 0px;
+    border: none;
+    color: var(--Gray);
+    font-weight: 600;
+}
+
+.SearchTrending .events .eventUnic a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 10px;
+    padding: 5px 20px;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+    margin:5px;
+    font-weight: 600;
+}
+
+
 .SearchTrending .usersList {
     width: 100%;
     display: flex;
