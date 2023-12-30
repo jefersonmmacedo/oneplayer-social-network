@@ -21,6 +21,7 @@ import { Reels } from '../pages/Reels/Reels';
 import { Explorer } from '../pages/Explorer/Explorer';
 import { Trendings } from '../pages/Trendings/Trendings';
 import { ComingSoon } from '../pages/ComingSoon/ComingSoon';
+import { Group } from '../pages/Group/Group';
 
 function Router () {
         const Local = localStorage.getItem("lenseyewear");
@@ -41,6 +42,7 @@ function Router () {
             <Route path="/trending" element={<Trendings />}/>
             <Route path="/entrar" element={<SignIn />}/>
             <Route path="/" element={<ComingSoon />}/>
+            <Route path="/grupo" element={<Group />}/>
             <Route path="/cadastrar" element={<SignUp />}/>
             <Route path="/perfil" element={<Profile />}/>
             <Route path="/produtos/:type/:sex" element={<Products />}/>
