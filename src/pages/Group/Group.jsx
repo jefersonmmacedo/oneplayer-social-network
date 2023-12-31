@@ -10,7 +10,7 @@ import { RiShieldStarLine } from "react-icons/ri";
 import { IoCalendarOutline } from "react-icons/io5";
 
 
-import "./Group.css";
+import "./group.css";
 import { HiLink } from "react-icons/hi";
 import { useState } from "react";
 import { Feed } from "../../Components/Feed/Feed";

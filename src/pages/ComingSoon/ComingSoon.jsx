@@ -28,7 +28,6 @@ export function ComingSoon() {
                 <img src={logo} alt="" />
                 </a>
                         <h2>Apaixonados pelo esporte!</h2>
-                        <h2>Apaixonados pelo esporte!</h2>
                         <h3>Em Breve</h3>
                         </div>
 
