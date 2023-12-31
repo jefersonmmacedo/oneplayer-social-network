@@ -28,6 +28,7 @@ export function Group() {
         setSection(data)
     }
 
+    
     return (
         <div className="Group">
             <Navbar />
