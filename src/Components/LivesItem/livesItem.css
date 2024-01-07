@@ -1,0 +1,131 @@
+.LivesItem {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+}
+.LivesItem .media {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px 5px 0px;
+    border-bottom: 1px solid var(--Paragraph);
+}
+
+.LivesItem .media  video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.LivesItem  .media .userMedia {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    color: var(--White);
+}
+.LivesItem  .media .userMedia .infosUserMedia {
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.LivesItem  .media .userMedia .infosUserMedia .textUser {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1px 0 5px 0;
+}
+.LivesItem  .media .userMedia .infosUserMedia .userImageName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.LivesItem  .media .userMedia .infosUserMedia .userImageName img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.LivesItem  .media .userMedia .infosUserMedia .userImageName h5 {
+    font-weight: 600;
+    margin: 0 10px;
+}
+.LivesItem  .media .userMedia .infosUserMedia .userImageName button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+    background: var(--Delete);
+    color: var(--White);
+    padding: 3px 10px;
+    border-radius: 50px;
+    margin: 10px 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.LivesItem  .media .userMedia .reactions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--White);
+    margin: 5px 0px 0px 0;
+}
+.LivesItem  .media .userMedia .reactions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--White);
+    background: var(--Black2);
+    border: none;
+    font-size: 12px;
+}
+
+.LivesItem  .media .userMedia .reactions button svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 900px) {
+    .LivesItem {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .LivesItem {
+        width:100%;
+        border: none;
+    }
+    @media (max-width: 450px) {
+        .LivesItem .media {
+            width: 90%;
+        }
+        
+        .LivesItem  .media .userMedia {
+            width: 100%;
+        }
+}
+}
+}

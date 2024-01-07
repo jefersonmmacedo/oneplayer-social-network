@@ -14,8 +14,8 @@ export function SignUp() {
     const date = new Date().getFullYear();
     const {createAccount} = useContext(AuthContext);
 
-    const [typeAccount, setTypeAccount] = useState("Pessoa Física");
-    const [subTypeAccount, setSubTypeAccount] = useState("Pessoa Física");
+    const [typeAccount, setTypeAccount] = useState("Torcedor");
+    const [subTypeAccount, setSubTypeAccount] = useState("");
     const [cpf_cnpj, setCpf_cnpj] = useState("");
     const [name, setName] = useState("");
     const [socialName, setSocialName] = useState("");

@@ -13,7 +13,6 @@ import ReactPlayer from 'react-player/vimeo'
 
 
 export function PostItem({text, media}) {
-    console.log(media);
     return (
         <div className="PostItem">
             <div className="post">

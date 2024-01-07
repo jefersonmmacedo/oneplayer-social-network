@@ -109,7 +109,7 @@
     background: var(--Black);
     color: var(--White);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
@@ -144,7 +144,7 @@
     color: var(--Primary);
     padding: 7px 20px;
     border-radius: 50px;
-    margin: 10px 3px;
+    margin: 0 3px;
 }
 
 .Group .aside .asideGroup .infosGroup .topGroup button svg {
@@ -153,7 +153,7 @@
 .Group .aside .asideGroup .infosGroup .topGroup .user {
     color: var(--White);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
 }

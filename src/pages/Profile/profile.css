@@ -134,6 +134,22 @@
     border-radius: 50px;
     margin: 10px 3px;
 }
+.Profile .aside .asideProfile .infosProfile .topProfile .btnProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+    background: var(--Black);
+    color: var(--White);
+    padding: 0px;
+    border-radius: 50px;
+    margin: 10px 3px;
+}
+
+.Profile .aside .asideProfile .infosProfile .topProfile .btnProfile svg {
+    font-size: 24px;
+}
 .Profile .aside .asideProfile .infosProfile .topProfile button {
     display: flex;
     align-items: center;

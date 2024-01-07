@@ -27,6 +27,23 @@ export function Profile() {
         setSection(data)
     }
 
+    let texto = "teste #futebol e também teste carollpierre ";
+
+
+      if(texto.includes("#")) {
+        let regex = new RegExp('#(.*?)', 'g');
+        let resul;
+
+        while ((resul = regex.exec(texto))) { 				
+    
+            console.log(resul[0]); // mostra o que está entre os :
+      }
+
+    } else {
+
+        console.log("Texto normal")
+    }
+
     return (
         <div className="Profile">
             <Navbar />
@@ -54,11 +71,10 @@ export function Profile() {
                                     <h5>@jefersonmmacedo</h5>
                             </div>
                         </div>
-
                                 <button>+ Seguir</button>
 
                                 <button className="btnProfile"><IoCalendarOutline /></button>
-                                <button className="btnProfile"><CiSaveDown2 size={22} /></button>
+                                <button className="btnProfile"><CiSaveDown2 size={26} /></button>
                                 <button className="btnProfile"><IoChatbubbleEllipsesOutline /></button>
 
                             {/* <div className="buttonsInfosProfile">

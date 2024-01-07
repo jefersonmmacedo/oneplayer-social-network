@@ -13,11 +13,9 @@ import { IoCalendarOutline } from "react-icons/io5";
 import "./group.css";
 import { HiLink } from "react-icons/hi";
 import { useState } from "react";
-import { Feed } from "../../Components/Feed/Feed";
 import { FeedGroup } from "../../Components/FeedGroup/FeedGroup";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
 import { SlOptionsVertical } from "react-icons/sl";
-import { CiSaveDown2 } from "react-icons/ci";
 import Navbar from "../../Components/NavBarTop/Navbar";
 
 export function Group() {
@@ -28,7 +26,7 @@ export function Group() {
         setSection(data)
     }
 
-    
+
     return (
         <div className="Group">
             <Navbar />
