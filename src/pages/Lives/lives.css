@@ -105,13 +105,17 @@
             width:70%;
         }
 
+
+
     @media (max-width: 650px) {
         .Lives .aside .asideLives {
             width: 95%;
+                    border: none;
         }
 
 
 }
 }
 }
+
 
