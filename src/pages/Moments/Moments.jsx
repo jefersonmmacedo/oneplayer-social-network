@@ -1,4 +1,4 @@
-import "./Moments.css";
+import "./moments.css";
 import { ToolsLeft } from "../../Components/ToolsLeft/ToolsLeft";
 import { useState } from "react";
 import { SearchTrending } from "../../Components/SearchTrending/SearchTrending";
