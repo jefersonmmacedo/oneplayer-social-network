@@ -17,6 +17,7 @@ import { ComingSoon } from '../pages/ComingSoon/ComingSoon';
 import { Group } from '../pages/Group/Group';
 import { Groups } from '../pages/Groups/Groups';
 import { Lives } from '../pages/Lives/Lives';
+import { Moments } from '../pages/Moments/Moments';
 
 function Router () {
         const Local = localStorage.getItem("lenseyewear");
@@ -34,6 +35,7 @@ function Router () {
             <Route path="/perfis" element={<Profiles />}/>
             <Route path="/reels" element={<Reels />}/>
             <Route path="/lives" element={<Lives />}/>
+            <Route path="/moments" element={<Moments />}/>
             <Route path="/explorar" element={<Explorer />}/>
             <Route path="/trending" element={<Trendings />}/>
             <Route path="/entrar" element={<SignIn />}/>

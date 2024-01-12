@@ -1,0 +1,182 @@
+.MomentsItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+}
+.MomentsItem .media {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px 5px 0px;
+    border-bottom: 1px solid var(--Paragraph);
+}
+.MomentsItem .media .InfosMoments {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--White);
+}
+
+.MomentsItem .media .InfosMoments h4 {
+    color: var(--Primary);
+    font-weight: 600;
+}
+
+.MomentsItem .media .InfosMoments .doubleInfosMoments  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--White);
+    margin: 3px 0 10px 0;
+    color: var(--Gray);
+}
+
+
+.MomentsItem .media .InfosMoments .doubleInfosMoments h5 {
+    margin: 5px 3px;
+    font-weight: 500;
+}
+
+
+.MomentsItem .media .MomentsMedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.MomentsItem .media .MomentsMedia .mediaMoments {
+    aspect-ratio : 1 / 1;
+    width: 22%;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .MomentsItem .media .MomentsMedia .mediaMoments img {
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .MomentsItem .media .MomentsMedia .mediaMoments video {
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+.MomentsItem  .media .userMedia {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    color: var(--White);
+}
+
+
+.MomentsItem  .media .userMedia .infosUserMedia {
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.MomentsItem  .media .userMedia .infosUserMedia .textUser {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1px 0 5px 0;
+}
+.MomentsItem  .media .userMedia .infosUserMedia .userImageName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.MomentsItem  .media .userMedia .infosUserMedia .userImageName img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.MomentsItem  .media .userMedia .infosUserMedia .userImageName h5 {
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+
+.MomentsItem  .media .userMedia .reactions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--White);
+    margin: 5px 0px 0px 0;
+}
+.MomentsItem  .media .userMedia .reactions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--White);
+    background: var(--Black2);
+    border: none;
+    font-size: 12px;
+}
+
+.MomentsItem  .media .userMedia .reactions button svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 900px) {
+
+@media (max-width: 650px) {
+    .MomentsItem {
+        width:100%;
+        border: none;
+    }
+
+    .MomentsItem .media .MomentsMedia .mediaMoments {
+        aspect-ratio : 1 / 1;
+        width: 22%;
+        margin: 5px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+
+
+    @media (max-width: 450px) {
+        .MomentsItem .media {
+            width: 90%;
+        }
+        
+        .MomentsItem  .media .userMedia {
+            width: 100%;
+        }
+}
+}
+}

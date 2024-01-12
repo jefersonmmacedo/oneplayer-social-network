@@ -44,6 +44,8 @@ export function ToolsLeft({menu}) {
                 <a href="#" >.</a>
                 <a href="#"> Mais</a>
                 <a href="#" >.</a>
+                <a href="#">Anuncie</a>
+                <a href="#" >.</a>
                 <p> One Player © {date}</p>
             </div>
 

@@ -190,7 +190,7 @@
 
     @media (max-width: 650px) {
         .Groups .aside .asideGroups {
-            width: 95%;
+            width: 100%;
             border: none;
         }
 

@@ -25,6 +25,7 @@
     flex-direction: row;
     object-fit: cover;
     border-radius: 10px;
+    margin: 5px 0;
 }
 .LivesItem  .media .userMedia {
     width:100%;
@@ -35,6 +36,8 @@
     padding: 0px 10px 10px 10px;
     color: var(--White);
 }
+
+
 .LivesItem  .media .userMedia .infosUserMedia {
     width:100%;
     display: flex;
@@ -66,20 +69,7 @@
     font-weight: 600;
     margin: 0 10px;
 }
-.LivesItem  .media .userMedia .infosUserMedia .userImageName button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    border: none;
-    background: var(--Delete);
-    color: var(--White);
-    padding: 3px 10px;
-    border-radius: 50px;
-    margin: 10px 3px;
-    font-size: 12px;
-    font-weight: 600;
-}
+
 
 .LivesItem  .media .userMedia .reactions {
     width: 100%;

@@ -114,7 +114,7 @@
 
     @media (max-width: 695px) {
         .Explorer .aside .asideExplorer {
-            width: 95%;
+            width: 100%;
             border: none;
         }
 

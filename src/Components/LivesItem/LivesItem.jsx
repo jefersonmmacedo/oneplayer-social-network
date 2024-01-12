@@ -1,9 +1,10 @@
 import "./livesItem.css";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
-import { CiChat1 } from "react-icons/ci";
+import { CiChat1, CiSaveDown2 } from "react-icons/ci";
 import { TbArrowsExchange } from "react-icons/tb";
 import { VscSend } from "react-icons/vsc";
 import photo from "../../assets/images/default.png";
+import { ProfileComponent } from "../ProfileComponent/ProfileComponent";
 
 export function LivesItem({text,media}) {
     return (
@@ -12,12 +13,7 @@ export function LivesItem({text,media}) {
                 <video src={media} ></video>
             <div className="userMedia">
                 <div className="infosUserMedia">
-                    <div className="userImageName">
-                        <img src={photo} alt="" />
-                        <h5>UsernameUser</h5>
-
-                        <button>Ao vivo</button>
-                    </div>
+                <ProfileComponent avatar={photo} name={"Jeferson Macedo"} username={"jefersonmmacedo"} live={true}/>
 
                     <div className="textUser">
                         <p>{text}</p>
@@ -27,9 +23,9 @@ export function LivesItem({text,media}) {
                     <button>
                         <AiOutlineLike /> 10K
                     </button>
-                    <button>
+                    {/* <button>
                         <AiOutlineDislike /> 5K
-                    </button>
+                    </button> */}
                     <button>
                         <CiChat1 /> 4K
                     </button>
@@ -38,6 +34,9 @@ export function LivesItem({text,media}) {
                     </button> */}
                     <button>
                         <VscSend /> Enviar
+                    </button>               
+                    <button>
+                        <CiSaveDown2 size={24} />
                     </button>               
                 </div>
             </div>

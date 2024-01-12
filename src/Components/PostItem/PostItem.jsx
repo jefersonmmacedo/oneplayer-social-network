@@ -10,31 +10,14 @@ import { CiSaveDown2 } from "react-icons/ci";
 import { CiChat1 } from "react-icons/ci";
 import { TbArrowsExchange } from "react-icons/tb";
 import ReactPlayer from 'react-player/vimeo'
+import { ProfileComponent } from "../ProfileComponent/ProfileComponent";
 
 
 export function PostItem({text, media}) {
     return (
         <div className="PostItem">
             <div className="post">
-            <div className="user">
-                <div className="imageName">
-                    <img src={photo} alt="" />
-                        <div className="username">
-                    <h5>Jeferson Macedo</h5>
-                    <h6>jefersonmmacedo</h6>
-
-                        </div>
-
-                    <HiCheckBadge />
-                    <button>+ Seguir</button>
-                </div>
-
-                <div className="info">
-                    <h6>12 Dez</h6>
-                    <SlOptionsVertical />
-                    <CiSaveDown2 size={24} />
-                </div>
-            </div>
+                <ProfileComponent avatar={photo} name={"Jeferson Macedo"} username={"jefersonmmacedo"} live={false}/>
             <div className="text">
                <p>{text}</p>
             </div>
@@ -51,9 +34,9 @@ export function PostItem({text, media}) {
                 <button>
                     <AiOutlineLike /> 10K
                 </button>
-                <button>
+                {/* <button>
                     <AiOutlineDislike /> 5K
-                </button>
+                </button> */}
                 <button>
                     <CiChat1 /> 4K
                 </button>
@@ -62,6 +45,9 @@ export function PostItem({text, media}) {
                 </button>
                 <button>
                     <VscSend /> Enviar
+                </button>               
+                <button>
+                <CiSaveDown2 size={24} />
                 </button>               
             </div>
 
