@@ -14,8 +14,8 @@ function App() {
     <div className='container'> 
     {/* <Navbar /> */}
     <ToastContainer autoClose={5000} theme="colored" /> 
-    <FooterMobile />
-    {/* <Router /> */}
+    {/* <FooterMobile /> */}
+    <Router />
     </div>
     </AuthProvider>
     </BrowserRouter>
