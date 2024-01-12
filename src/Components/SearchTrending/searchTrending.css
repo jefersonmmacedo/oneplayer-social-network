@@ -31,7 +31,7 @@
     flex-direction: row;
     border-radius: 10px;
 }
-.SearchTrending .buttonsSearching button {
+.SearchTrending .buttonsSearching a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@
     border-radius: 6px;
 }
 
-.SearchTrending .buttonsSearching button:hover {
+.SearchTrending .buttonsSearching a:hover {
     background: var(--Black);
 }
 .SearchTrending .search {

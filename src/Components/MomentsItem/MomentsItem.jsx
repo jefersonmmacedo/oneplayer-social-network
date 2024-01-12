@@ -19,11 +19,11 @@ export function MomentsItem({text,media}) {
                         <h4>FlaxFlu 1 Jogo Final Carioca 2024</h4>
                         <div className="doubleInfosMoments">
                        
-                        <h5> <MdStadium /> Maracanã</h5>
-                        
-                        <h5><IoLocationOutline /> Maracanã - Rio de Janeiro</h5>
-                        
-                        <h5><IoCalendarOutline /> 05/04/2024</h5>
+                            <h5> <MdStadium /> Maracanã</h5>
+                            
+                            <h5><IoLocationOutline /> Maracanã - Rio de Janeiro</h5>
+                            
+                            <h5><IoCalendarOutline /> 05/04/2024</h5>
                         </div>
 
                         <p>{text}</p>

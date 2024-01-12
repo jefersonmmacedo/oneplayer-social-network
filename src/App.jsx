@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
     <AuthProvider>
     <div className='container'> 
-    <Navbar />
+    {/* <Navbar /> */}
     <ToastContainer autoClose={5000} theme="colored" /> 
-    <FooterMobile />
+    {/* <FooterMobile /> */}
     <Router />
     </div>
     </AuthProvider>

@@ -14,10 +14,10 @@ export function SearchTrending() {
     return (
         <div className="SearchTrending">
             <div className="buttonsSearching">
-                <button ><IoCalendarOutline /></button>
-                <button ><CiSaveDown2 /></button> 
-                <button ><IoHeartOutline /></button>
-                <button ><IoChatbubbleEllipsesOutline /></button>
+                <a href="#"><IoCalendarOutline /></a>
+                <a href="/salvos"><CiSaveDown2 /></a> 
+                <a href="#"><IoHeartOutline /></a>
+                <a href="#"><IoChatbubbleEllipsesOutline /></a>
             </div>
             <div className="search">
                 <IoSearchSharp />
