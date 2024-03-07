@@ -25,7 +25,8 @@
     flex-direction: column;
     background: var(--Black2);
     border: none;
-
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
     overflow: auto;
 }
 
@@ -62,6 +63,21 @@
         .Reels .aside .asideReels {
             width: 100;
         }
+
+        .Reels .aside .asideReels {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            background: var(--Black2);
+            border: none;
+            border-left: none;
+            border-right: none;
+            overflow: auto;
+        }
+        
 
 
 }

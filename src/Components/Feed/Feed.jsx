@@ -1,4 +1,4 @@
-import { PostComonent } from "../PostComonent/PostComonent";
+import { PostComponent } from "../PostComponent/PostComponent";
 import { PostItem } from "../PostItem/PostItem";
 import photo from "../../assets/images/imageDefault.png";
 import photo2 from "../../assets/images/imageDefault2.png";
@@ -55,8 +55,8 @@ export function Feed() {
             </div>
 
           
-            <PostComonent />
-            <PostItem text={texts[0].text} media={video}/>
+            <PostComponent />
+            <PostItem text={texts[0].text} media={"https://upcdn.io/W142hX6/raw/uploads/2024/01/23/184069 (720p)-6Eh3.mp4"}/>
             <PostItem text={texts[6].text} media={photo7}/>
             <PostItem text={texts[1].text} media={video2}/>
             <PostItem text={texts[2].text} media={video3}/>
@@ -65,6 +65,7 @@ export function Feed() {
             <PostItem text={texts[4].text} media={video5}/>
             <PostItem text={texts[8].text} media={photo9}/>
             <PostItem text={texts[5].text} media={video6}/>
+            
          
 
         </div>

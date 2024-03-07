@@ -1,6 +1,6 @@
 import "./reelsItem.css";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
-import { CiChat1 } from "react-icons/ci";
+import { CiChat1, CiSaveDown2 } from "react-icons/ci";
 import { TbArrowsExchange } from "react-icons/tb";
 import { VscSend } from "react-icons/vsc";
 import photo from "../../assets/images/default.png";
@@ -16,7 +16,7 @@ export function Reelstem({text,media}) {
                         <img src={photo} alt="" />
                         <h5>UsernameUser</h5>
 
-                        <button>+ Seguir</button>
+                        {/* <button>+ Seguir</button> */}
                     </div>
 
                     <div className="textUser">
@@ -28,17 +28,14 @@ export function Reelstem({text,media}) {
                         <AiOutlineLike /> 10K
                     </button>
                     <button>
-                        <AiOutlineDislike /> 5K
-                    </button>
-                    <button>
                         <CiChat1 /> 4K
                     </button>
-                    {/* <button>
-                        <TbArrowsExchange /> 517
-                    </button> */}
                     <button>
                         <VscSend /> Enviar
-                    </button>               
+                    </button>  
+                    <button>
+                        <CiSaveDown2 size={24} />
+                    </button>    
                 </div>
             </div>
             </div>

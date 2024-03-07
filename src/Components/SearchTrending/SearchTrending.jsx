@@ -16,7 +16,7 @@ export function SearchTrending() {
             <div className="buttonsSearching">
                 <a href="#"><IoCalendarOutline /></a>
                 <a href="/salvos"><CiSaveDown2 /></a> 
-                <a href="#"><IoHeartOutline /></a>
+                <a href="/notificacoes"><IoHeartOutline /></a>
                 <a href="#"><IoChatbubbleEllipsesOutline /></a>
             </div>
             <div className="search">

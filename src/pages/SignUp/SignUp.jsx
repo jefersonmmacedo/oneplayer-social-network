@@ -110,15 +110,19 @@ export function SignUp() {
                         <div className="form">
                         <h3>Cadastre-se</h3>
 
+                        <div className="textSpan">
+                            <span>Usuário</span>
+                        </div>
+
                         <div className="double">
                             <input type="text" value={name} onChange={e => (setName(e.target.value))} placeholder="Nome Completo"/>
                             <input type="text" value={socialName} onChange={e => (setSocialName(e.target.value))} placeholder="Nome de usuário"/>
                         </div>
 
 
-                        <div className="textSpan">
+                        {/* <div className="textSpan">
                             <span>Tipo de conta</span>
-                        </div>
+                        </div> */}
 
                         {/* <div className="buttonsSelect">
                             <button className={typeAccount == "Torcedor" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Torcedor")}>Torcedor</button>
@@ -131,7 +135,7 @@ export function SignUp() {
 
 
 
-                        <div className="double">
+                        {/* <div className="double">
                             <select onChange={handleSelectType}>
                                     <option value="Torcedor">Torcedor</option>
                                     <option value="Atleta">Atleta</option>
@@ -166,11 +170,12 @@ export function SignUp() {
                                    
                             </select>
 
-                        </div>
+                        </div> */}
                       
                         <div className="textSpan">
                             <span>Data de nascimento</span>
                         </div>
+
                             <div className="triple">
                                 <select name="" id="">
                                 <option value="1">01</option>
@@ -316,19 +321,32 @@ export function SignUp() {
                                 <option value="1930">1930</option>
                                 </select>
                             </div>
+
+                            <div className="textSpan">
+                            <span>Contato</span>
+                        </div>
+                        
                             <div className="double">
                                 <input type="text" value={email} onChange={e => (setEmail(e.target.value))} placeholder="Celular"/>
                                 <input type="text" value={email} onChange={e => (setEmail(e.target.value))} placeholder="E-mail"/>
                             </div>
                             <div className="passwords">
-                                <div className="pass">                                    
+                                {/* <div className="pass">                                    
                             <input type="password" value={password} onChange={e => (setPassword(e.target.value))} placeholder="Nova Senha"/>
                                   <button><IoEyeOffOutline /></button>  
-                                </div>
+                                </div> */}
                                 {/* <div className="pass">
                             <input type="password" value={passwordConfirm} onChange={e => (setPasswordConfirm(e.target.value))} placeholder="Confirmação de Senha"/>
                                 <button><IoEyeOffOutline /></button>  
                                 </div> */}
+                            </div>
+
+                            <div className="textSpan">
+                            <span>Senha</span>
+                             </div>
+                            <div className="double">
+                            <input type="password" value={password} onChange={e => (setPassword(e.target.value))} placeholder="Nova Senha"/>
+                            <input type="password" value={passwordConfirm} onChange={e => (setPasswordConfirm(e.target.value))} placeholder="Confirmação de Senha"/>
                             </div>
 
                             {

@@ -7,6 +7,9 @@ import { MdStadium } from "react-icons/md";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { BsPlayBtn, BsPlayBtnFill } from "react-icons/bs";
 import { AiFillFire } from "react-icons/ai";
+import { CiMedal } from "react-icons/ci";
+import { FaMedal } from "react-icons/fa";
+import { BiMedal  } from "react-icons/bi";
 import { RiFacebookFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXFill, RiYoutubeFill } from "react-icons/ri";
 
 export function ToolsLeft({menu}) {
@@ -29,8 +32,9 @@ export function ToolsLeft({menu}) {
                {/*  <a href="/mensagens" className={menu === "Mensagens" ? "select": ""}><IoChatbubbleEllipses  /> Mensagens</a> */}
                 <a href="/trending" className={menu === "Trending" ? "select": ""}><AiFillFire /> Trending</a>
                 <a href="/moments" className={menu === "Moments" ? "select": ""}><MdStadium /> Moments</a>
+                <a href="/conquistas" className={menu === "Conquistas" ? "select": ""}><BiMedal /> Conquistas</a>
                 <a href="/grupos" className={menu === "Grupos" ? "select": ""}><HiUserGroup /> Grupos</a>
-                <a href="/reels" className={menu === "Reels" ? "select": ""}><BsPlayBtnFill /> Reels</a>
+                <a href="/virals" className={menu === "Virals" ? "select": ""}><BsPlayBtnFill /> Virals</a>
                 <a href="/lives" className={menu === "Lives" ? "select": ""}><HiStatusOnline /> Lives</a>
             </div>
 
@@ -42,10 +46,9 @@ export function ToolsLeft({menu}) {
                 <a href="#"> Publicidade</a>
                 <a href="#">Cookies</a>
                 <a href="#" >.</a>
-                <a href="#"> Mais</a>
-                <a href="#" >.</a>
                 <a href="#">Anuncie</a>
                 <a href="#" >.</a>
+                <a href="#"> Mais</a>
                 <p> One Player © {date}</p>
             </div>
 

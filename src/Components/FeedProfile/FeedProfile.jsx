@@ -1,4 +1,4 @@
-import { PostComonent } from "../PostComonent/PostComonent";
+import { PostComponent } from "../PostComponent/PostComponent";
 import { PostItem } from "../PostItem/PostItem";
 import photo from "../../assets/images/imageDefault.png";
 import photo2 from "../../assets/images/imageDefault2.png";
@@ -36,7 +36,7 @@ export function FeedProfile() {
 
             {section === "FeedProfile" ?
            <>
-            <PostComonent />
+            <PostComponent />
             <PostItem text={texts[0].text} media={photo}/>
             <PostItem text={texts[1].text} media={photo2}/>
             <PostItem text={texts[2].text} media={photo3}/>

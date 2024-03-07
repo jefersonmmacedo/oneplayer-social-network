@@ -234,11 +234,16 @@
 .SignUp .sections .sectionSignUp .form .passwords .pass button {
     padding: 10px;
     border-radius: 6px;
-    width: 50px;
+    width: 40px;
+    height: 40px;
     color: var(--Description);
     background-color: var(--White);
     border: 1px solid var(--Primary);
     margin: 5px 0 5px 5px;
+}
+
+.SignUp .sections .sectionSignUp .form .passwords .pass button svg {
+    margin-left: 10px;
 }
 
 .SignUp .sections .imageSignUp {

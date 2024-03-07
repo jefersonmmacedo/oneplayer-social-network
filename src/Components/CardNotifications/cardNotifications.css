@@ -1,0 +1,207 @@
+.CardNotifications {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+    overflow: auto;
+}
+
+.CardNotifications .buttonsCardNotifications {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.CardNotifications .buttonsCardNotifications a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Black);
+    color: var(--Gray);
+    object-fit: cover;
+    text-decoration: none;
+    font-size: 14px;
+}
+.CardNotifications .buttonsCardNotifications a:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.CardNotifications .buttonsCardNotifications a:last-child{
+    border-radius: 0px 10px  10px  0px;
+}
+.CardNotifications .buttonsCardNotifications a:hover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+.CardNotifications .buttonsCardNotifications .select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    background: var(--Primary);
+    color: var(--White);
+}
+
+
+.CardNotifications::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .CardNotifications::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .CardNotifications::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+
+  .CardNotifications .blockNotifications {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .CardNotifications .blockNotifications h4 {
+    color: var(--White);
+    font-weight: 600;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .CardNotifications .blockNotifications h4 svg {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .CardNotifications .blockNotifications .listNotifications {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
+  .CardNotifications .blockNotifications .listNotifications .unicNotifications {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px 0;
+    background-color: var(--Black);
+    padding:5px;
+    border-radius: 10px;
+  }
+  .CardNotifications .blockNotifications .listNotifications .unicNotifications button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin: 3px;
+}
+  .CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      object-fit: cover;
+    }
+
+    /* .CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications svg{
+        margin: 7px 0;
+        color: var(--Primary);
+    } */
+    .CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications .usernameNotifications {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 5px;
+    }
+
+
+.CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications .usernameNotifications h5 {
+    margin: 0px 0px 0px 5px;
+    font-weight: 500;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications .usernameNotifications svg{
+        margin-left: 3px;
+        color: var(--Primary);
+    }
+
+.CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications .usernameNotifications h6 {
+    margin: 0px 6px 5px 6px; 
+    color: var(--Gray);
+}
+.CardNotifications .blockNotifications .listNotifications .unicNotifications .imageNameNotifications .usernameNotifications h6 span {
+    margin: 10px 0px;
+    color: var(--White);
+}
+
+
+
+@media (max-width: 900px) {
+    .CardNotifications {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .CardNotifications {
+        width:100%;
+        border: none;
+    }
+
+    .CardNotifications .buttonsCardNotifications {
+        width: 95%;
+    }
+}
+}

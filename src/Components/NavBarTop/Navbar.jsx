@@ -71,7 +71,7 @@ const Nav = styled.nav`
     color: var(--Primary);
     border: none;
     border-radius: 6px;
-    margin: 0 20px;
+    margin: 0 5px;
 }
 
 
@@ -89,7 +89,7 @@ const Nav = styled.nav`
       align-items: center;
       justify-content: center;
       flex-direction: row;
-      padding: 10px 10px;
+      padding: 10px 5px;
       font-size: 22px;
       background: transparent;
       color: var(--Primary);
@@ -97,6 +97,8 @@ const Nav = styled.nav`
       border-radius: 6px;
       margin: 0px;
   }
+
+
   
 
   }

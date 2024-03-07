@@ -26,7 +26,7 @@ export function PostItem({text, media}) {
                     <img src={media} alt="" />
                     :
                 <video src={media} controls></video>
-            }
+                 }
 
             </div>
 

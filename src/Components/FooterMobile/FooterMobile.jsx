@@ -1,7 +1,7 @@
 import "./footerMobile.css"
 import { GoPlusCircle } from "react-icons/go";
 import { HiOutlineVideoCamera } from "react-icons/hi";
-import { IoCompass, IoCompassOutline, IoHome, IoHomeOutline } from "react-icons/io5";
+import { IoChatbubbleEllipsesOutline, IoCompass, IoCompassOutline, IoHome, IoHomeOutline } from "react-icons/io5";
 import { GoHome } from "react-icons/go";
 import { GoVideo } from "react-icons/go";
 import { TfiVideoClapper } from "react-icons/tfi";
@@ -16,6 +16,7 @@ export function FooterMobile() {
                 <a href="/explorar" ><IoCompassOutline /> </a>
              <button ><GoPlusCircle  /></button>
              <a href="/reels" ><BsPlayBtn /> </a>
+             {/* <a href="#" ><IoChatbubbleEllipsesOutline /> </a> */}
                 <a href="/perfil" >
                     <img src={photo} alt="" />
                 </a>

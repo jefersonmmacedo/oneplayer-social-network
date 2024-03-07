@@ -1,0 +1,181 @@
+.PostComponent {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Black);
+    margin: 10px 0 0 0;
+}
+.PostComponent .SimplePost {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.PostComponent .AdvancedPost {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 10px 0 20px 0;
+}
+.PostComponent .files {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.PostComponent .files::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  .PostComponent .files::-webkit-scrollbar-track {
+    background: var(--Black);        /* color of the tracking area */
+  }
+  
+  .PostComponent .files::-webkit-scrollbar-thumb {
+    background-color: var(--Primary);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid var(--Black);  /* creates padding around scroll thumb */
+  }
+
+.PostComponent .buttonPost {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.PostComponent  .SimplePost input {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    background: var(--Black);
+    color: var(--White);
+}
+.PostComponent  .SimplePost textarea {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    background: var(--Black);
+    color: var(--White);
+    resize: none;
+}
+.PostComponent  .SimplePost img {
+    width: 26px;
+}
+.PostComponent  .SimplePost svg {
+    color: var(--Primary);
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.PostComponent  .SimplePost svg:hover {
+    color: var(--White);
+}
+
+.PostComponent .AdvancedPost input {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    background: var(--Black);
+    color: var(--White);
+}
+.PostComponent .AdvancedPost textarea {
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    background: var(--Black);
+    color: var(--White);
+}
+.PostComponent .AdvancedPost img {
+    width: 26px;
+}
+.PostComponent .AdvancedPost svg {
+    color: var(--Primary);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.PostComponent .AdvancedPost svg:hover {
+    color: var(--White);
+}
+
+.PostComponent .buttonPost button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: var(--Primary);
+    color: var(--White);
+    font-size: 14px;
+}
+
+.PostComponent .buttonPost button svg {
+    margin: 0 0  0 5px;
+    color: var(--White);
+    font-size: 14px;
+}
+
+
+.PostComponent .files img {
+    aspect-ratio : 1 / 1;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 2px;
+}
+.PostComponent .files video {
+    aspect-ratio : 1 / 1;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 2px;
+}
+
+@media (max-width: 650px) {
+    
+.PostComponent .files img {
+    aspect-ratio : 1 / 1;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 2px;
+}
+.PostComponent .files video {
+    aspect-ratio : 1 / 1;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 2px;
+}
+
+.PostComponent {
+    width: 95%;
+}
+
+}
