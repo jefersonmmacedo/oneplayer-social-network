@@ -39,6 +39,39 @@ export function Feed() {
         {text: "A criança e seu sonho"},        
         {text: "Brilho e leveza"},        
         {text: "O homem peixe, nadando para a vitória!"},        
+        {text: `Em Dezembro de 2023, a TV Globo ja havia garantido a arrecadação de R$ 1,560 Bilhão somente para transmissões de jogos do Brasileirão e da Copa do Brasil.
+
+Fonte: https://f5.folha.uol.com.br/televisao/2023/12/hypera-pharma-e-nivea-nao-renovam-e-deixam-de-patrocinar-futebol-na-globo-em-2024.shtml`},        
+        {text: `Em Dezembro de 2023, a TV Globo ja havia garantido a arrecadação de R$ 1,560 Bilhão somente para transmissões de jogos do Brasileirão e da Copa do Brasil.
+
+Fonte: https://f5.folha.uol.com.br/televisao/2023/12/hypera-pharma-e-nivea-nao-renovam-e-deixam-de-patrocinar-futebol-na-globo-em-2024.shtml`},        
+        {text: `Ranking dos clubes com maior número de torcedores
+
+Flamengo: 46,9 milhões de torcedores (21,9%)
+Corinthians: 30,4 milhões de torcedores (14,2%)
+São Paulo: 21,2 milhões de torcedores (9,9%)
+Palmeiras: 16,5 milhões de torcedores (7,7%)
+Vasco: 13,2 milhões de torcedores (6,2%)
+Cruzeiro: 13 milhões de torcedores (6,1%)
+Grêmio: 9,8 milhões de torcedores (4,6%)
+Atlético-MG: 9,2 milhões de torcedores (4,3%)
+Bahia: 7,7 milhões de torcedores (3,6%)
+Internacional: 7,5 milhões de torcedores (3,5%)
+Fluminense: 7,2 milhões de torcedores (3,4%)
+Santos: 6,6 milhões de torcedores (3,1%)
+Botafogo: 4,2 milhões de torcedores (2%)
+Sport: 4 milhões de torcedores (1,9%)`},        
+        {text: `As 10 redes sociais mais usadas no Brasil em 2023
+
+WhatsApp - 169 milhões de usuários (Fonte: We Are Social e Meltwater)
+YouTube - 142 milhões de usuários (Fonte: Youtube/Google)
+Instagram - 113,5 milhões de usuários (Fonte: We Are Social e Meltwater)
+Facebook - 109 milhões de usuários (Fonte: Facebook/Meta)
+
+Forbes: Brasil é o terceiro maior consumidor de redes sociais em todo o mundo
+Ainda de acordo com a Comscore, YouTube, Facebook e Instagram são as redes mais acessadas pelos usuários brasileiros, com alcance de 96,4%, 85,1% e 81,4%, respectivamente
+
+Leia mais em: https://forbes.com.br/forbes-tech/2023/03/brasil-e-o-terceiro-pais-que-mais-consome-redes-sociais-em-todo-o-mundo/`},        
     ]
 
 
@@ -56,6 +89,10 @@ export function Feed() {
 
           
             <PostComponent />
+            <PostItem text={texts[12].text} media={"https://agenciatigris.com.br/wp-content/uploads/2022/04/conteudo-para-as-redes-sociais.jpg"}/>
+            <PostItem text={texts[9].text} media={"https://i.ytimg.com/vi/UFd-xF2TyQE/maxresdefault.jpg"}/>
+            <PostItem text={texts[10].text} media={"https://amazonasatual.com.br/wp-content/uploads/2023/01/Casas-de-apostas.jpg"}/>
+            <PostItem text={texts[11].text} media={"https://i.superesportes.com.br/8QrVk0NspZhH0sTw62gcNoNn6Cg=/750x0/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2021/10/27/3945073/20211027114814449629o.png"}/>
             <PostItem text={texts[0].text} media={"https://upcdn.io/W142hX6/raw/uploads/2024/01/23/184069 (720p)-6Eh3.mp4"}/>
             <PostItem text={texts[6].text} media={photo7}/>
             <PostItem text={texts[1].text} media={video2}/>

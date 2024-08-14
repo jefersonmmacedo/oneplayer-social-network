@@ -27,12 +27,14 @@
     justify-content: flex-start;
     flex-direction: row;
     text-align: left;
+    white-space: pre-line;
 }
 .PostItem .post .text p {
     color: var(--White);
     margin: 10px 0;
     text-align: left;
     font-size: 13px;
+    white-space: pre-line;
 }
 
 .PostItem .post .media {
