@@ -16,12 +16,10 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
-    border-bottom: 1px solid var(--Paragraph);
 }
 
 .Reelstem .media  video {
-    width: 100%;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +28,7 @@
     border-radius: 10px;
 }
 .Reelstem  .media .userMedia {
-    width:40%;
+    width:90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -126,7 +124,7 @@
     }
     @media (max-width: 450px) {
         .Reelstem .media {
-            width: 90%;
+            width: 100%;
         }
         
         .Reelstem  .media .userMedia {

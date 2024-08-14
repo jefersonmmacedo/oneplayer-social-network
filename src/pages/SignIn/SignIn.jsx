@@ -32,7 +32,7 @@ export function SignIn() {
                             <div className="passwords">
                                 <div className="pass">                                    
                             <input type="password" value={password} onChange={e => (setPassword(e.target.value))} placeholder="Senha"/>
-                                  <button><IoEyeOff /></button>  
+                                  <button className="btnPassword"><IoEyeOff /></button>  
                                 </div>
                             </div>
                             <div className="linkSignIn">

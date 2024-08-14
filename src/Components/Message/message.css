@@ -1,0 +1,242 @@
+.Message {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--Black2);
+    border: none;
+    border-left: 1px solid var(--Paragraph);
+    border-right: 1px solid var(--Paragraph);
+    overflow: auto;
+}
+
+.Message::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .Message::-webkit-scrollbar-track {
+    background: var(--BorderHover);        /* color of the tracking area */
+  }
+  
+  .Message::-webkit-scrollbar-thumb {
+    background-color: var(--Border);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--BorderHover);  /* creates padding around scroll thumb */
+  }
+
+  .Message .MessageUnic {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--White);
+    padding: 20px;
+}
+  
+
+.Message .MessageUnic .MyMessage {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--White);
+    margin: 5px 0;
+}
+
+  .Message .MessageUnic .MyMessage button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+  .Message .MessageUnic .MyMessage .blockUser  {
+    background: var(--Black);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 10px;
+}
+  .Message .MessageUnic .MyMessage .blockUser img {
+    border-radius: 50%;
+    width: 30px;
+    margin: 3px;
+}
+
+
+  .Message .MessageUnic .MyMessage .blockUser svg{
+    margin: 0px;
+    color: var(--Primary);
+}
+  .Message .MessageUnic .MyMessage .blockUser .username {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+  .Message .MessageUnic .MyMessage .blockUser .username h5 {
+    margin: 0px 3px;
+    font-weight: 500;
+    padding: 0px;
+    border: none;
+}
+
+  .Message .MessageUnic .MyMessage .blockUser .username h6 {
+    margin: 0px 3px;
+    color: var(--White);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+  .Message .MessageUnic .MyMessage .blockUser .username h6 svg {
+    margin-left: 5px;
+}
+
+  .Message .MessageUnic .MyMessage .blockUser .username span {
+    margin: 0px 3px;
+    color: var(--Gray);
+    font-size: 13px;
+}
+  
+
+.Message .MessageUnic .YouMessage {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    color: var(--White);
+    margin: 5px 0;
+}
+
+  .Message .MessageUnic .YouMessage button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--Primary);
+    background: var(--Black);
+    color: var(--Primary);
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+  .Message .MessageUnic .YouMessage .blockUser  {
+    background: var(--Black3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    color: var(--White);
+    border-radius: 6px;
+    padding: 10px;
+}
+  .Message .MessageUnic .YouMessage .blockUser img {
+    border-radius: 50%;
+    width: 30px;
+    margin: 3px;
+}
+
+
+  .Message .MessageUnic .YouMessage .blockUser svg{
+    margin: 0px;
+    color: var(--Primary);
+}
+  .Message .MessageUnic .YouMessage .blockUser .username {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+}
+  .Message .MessageUnic .YouMessage .blockUser .username h5 {
+    margin: 0px 3px;
+    font-weight: 500;
+    padding: 0px;
+    border: none;
+}
+
+  .Message .MessageUnic .YouMessage .blockUser .username h6 {
+    margin: 0px 3px;
+    color: var(--White);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+  .Message .MessageUnic .YouMessage .blockUser .username h6 svg {
+    margin-left: 5px;
+}
+
+  .Message .MessageUnic .YouMessage .blockUser .username span {
+    margin: 0px 3px;
+    color: var(--Gray);
+    font-size: 13px;
+}
+  .Message .Postmessage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.Message .Postmessage textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    height: 60px;
+    background-color: var(--Black);
+    color: var(--White);
+    border: 1px solid var(--Gray);
+}
+
+.Message .Postmessage textarea:focus {
+    border: 1px solid var(--Primary);
+}
+
+.Message .Postmessage button {
+    margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .Message {
+        width:70%;
+        border-right:none;
+    }
+@media (max-width: 650px) {
+    .Message {
+        width:100%;
+        border: none;
+    }
+
+    .Message .buttonsMessage {
+        width: 95%;
+    }
+}
+}

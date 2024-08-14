@@ -120,57 +120,102 @@ export function SignUp() {
                         </div>
 
 
-                        {/* <div className="textSpan">
+                        <div className="textSpan">
                             <span>Tipo de conta</span>
-                        </div> */}
+                        </div>
 
-                        {/* <div className="buttonsSelect">
+                        <div className="buttonsSelect">
                             <button className={typeAccount == "Torcedor" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Torcedor")}>Torcedor</button>
                             <button className={typeAccount == "Atleta" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Atleta")}>Atleta</button>
                             <button className={typeAccount == "Comunicador" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Comunicador")}>Comunicador</button>
                             <button className={typeAccount == "Clube" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Clube")}>Clube</button>
                             <button className={typeAccount == "Profissional" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Profissional")}>Profissional</button>
-                        </div> */}
+                            <button className={typeAccount == "Empresa" ? "btnSelect1" : "btnSelect2"} onClick={ () => selectTypeAccount("Empresa")}>Empresa</button>
+                        </div>
 
 
 
 
-                        {/* <div className="double">
-                            <select onChange={handleSelectType}>
+                        <div className="double">
+                            {/* <select onChange={handleSelectType}>
                                     <option value="Torcedor">Torcedor</option>
                                     <option value="Atleta">Atleta</option>
                                     <option value="Comunicador">Comunicador</option>
                                     <option value="Clube">Clube</option>
                                     <option value="Profissional">Profissional</option>
-                            </select>
-                            <select onChange={handleSelectSubType}>
+                                    <option value="Empresa">Empresa</option>
+                            </select> */}
+                            </div>
+                           
 
                                 {
-                                typeAccount == "Torcedor" ? "" 
-                                : typeAccount == "Atleta" ? 
-                                <>
+                                typeAccount == "Torcedor" ?
+                                <select onChange={handleSelectSubType}> 
+                                <option value="Torcedor">Torcedor</option>
+                                   </select>
+                                :
+                                typeAccount == "Atleta" ?
+                                <select onChange={handleSelectSubType}> 
+                               
                                  <option value="Atleta profissional">Atleta profissional</option>
                                     <option value="Atleta Amador">Atleta Amador</option>
-                                    </>
+                                    </select>
                                : typeAccount == "Clube" ? 
-                                 <>
+                               <select onChange={handleSelectSubType}>
                                 <option value="Clube Profissional">Clube Profissional</option>
                                 <option value="Time amaddor">Time amaddor</option>
-                                <option value="Influencer">Influencer</option>
-                                </>
+                                </select>
                                : typeAccount == "Comunicador" ? 
-                                <>
-                                <option value="Profissional da comunicação">Profissional da comunicação</option>
+                               <select onChange={handleSelectSubType}>
                                 <option value="Jornalista">Jornalista</option>
                                 <option value="Influencer">Influencer</option>
-                                </>
-                               
-                                :""
+                                <option value="Narrador">Narrador</option>
+                                <option value="Comentarista">Comentarista</option>
+                                <option value="Fotógrafo">Fotógrafo</option>
+                                <option value="Apresentador">Apresentador</option>
+                                <option value="Profissional da comunicação">Profissional da comunicação</option>
+                                </select>
+                               : typeAccount == "Profissional" ? 
+                               <select onChange={handleSelectSubType}>
+                                <option value="Treinador">Treinador</option>
+                                <option value="Auxiliar Técnico">Auxiliar Técnico</option>
+                                <option value="Presidente">Presidente</option>
+                                <option value="Diretor">Diretor</option>
+                                <option value="Médico">Médico</option>
+                                <option value="Fisioterapeuta">Fisioterapeuta</option>
+                                <option value="Psicologo">Psicologo</option>
+                                <option value="Nutricionista">Nutricionista</option>
+                                <option value="Staff">Staff</option>
+                                <option value="Segurança">Segurança</option>
+                                <option value="Estagiário">Estagiário</option>
+                                <option value="Fotógrafo">Fotógrafo</option>
+                                <option value="Scout">Scout</option>
+                                <option value="Analista">Analista</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Programador">Programador</option>
+                                <option value="Roupeiro">Roupeiro</option>
+                                <option value="Preparador de Goleiros">Preparador de Goleiros</option>
+                                </select>
+                               : typeAccount == "Empresa" ? 
+                               <select onChange={handleSelectSubType}>
+                                <option value="Material Esportivo">Material Esportivo</option>
+                                <option value="Rede de Academias">Rede de Academias</option>
+                                <option value="Banco">Banco</option>
+                                <option value="Alimentos">Alimentos</option>
+                                <option value="Cosméticos">Cosméticos</option>
+                                <option value="Casa de Apostas">Casa de Apostas</option>
+                                <option value="TV ou Canais de Comunicação">TV ou Canais de Comunicação</option>
+                                <option value="Plataforma de Stream">Plataforma de Stream</option>
+                                <option value="Empresa Automobilistica">Empresa Automobilistica</option>
+                                <option value="Cervejaria e bebidas">Cervejaria e bebidas</option>
+                                </select>
+                                :
+                                ""
                                 }
                                    
-                            </select>
+                            
 
-                        </div> */}
+                        
                       
                         <div className="textSpan">
                             <span>Data de nascimento</span>
@@ -330,23 +375,20 @@ export function SignUp() {
                                 <input type="text" value={email} onChange={e => (setEmail(e.target.value))} placeholder="Celular"/>
                                 <input type="text" value={email} onChange={e => (setEmail(e.target.value))} placeholder="E-mail"/>
                             </div>
-                            <div className="passwords">
-                                {/* <div className="pass">                                    
-                            <input type="password" value={password} onChange={e => (setPassword(e.target.value))} placeholder="Nova Senha"/>
-                                  <button><IoEyeOffOutline /></button>  
-                                </div> */}
-                                {/* <div className="pass">
-                            <input type="password" value={passwordConfirm} onChange={e => (setPasswordConfirm(e.target.value))} placeholder="Confirmação de Senha"/>
-                                <button><IoEyeOffOutline /></button>  
-                                </div> */}
-                            </div>
+                           
 
                             <div className="textSpan">
                             <span>Senha</span>
                              </div>
-                            <div className="double">
+                             <div className="passwords">
+                                <div className="pass">                                    
                             <input type="password" value={password} onChange={e => (setPassword(e.target.value))} placeholder="Nova Senha"/>
+                                  <button><IoEyeOffOutline /></button>  
+                                </div>
+                                <div className="pass">
                             <input type="password" value={passwordConfirm} onChange={e => (setPasswordConfirm(e.target.value))} placeholder="Confirmação de Senha"/>
+                                <button><IoEyeOffOutline /></button>  
+                                </div>
                             </div>
 
                             {

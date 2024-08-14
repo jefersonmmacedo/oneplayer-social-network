@@ -17,7 +17,7 @@ export function SearchTrending() {
                 <a href="#"><IoCalendarOutline /></a>
                 <a href="/salvos"><CiSaveDown2 /></a> 
                 <a href="/notificacoes"><IoHeartOutline /></a>
-                <a href="#"><IoChatbubbleEllipsesOutline /></a>
+                <a href="/chat"><IoChatbubbleEllipsesOutline /></a>
             </div>
             <div className="search">
                 <IoSearchSharp />
